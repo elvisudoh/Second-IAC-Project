@@ -1,0 +1,1 @@
+aws cloudformation create-stack --stack-name project2infrastack --template-body file://infraproject2.yml --parameters file://infraproject2.json --capabilities "CAPABILITY_IAM" "CAPABILITY_NAMED_IAM" --region us-west-2
