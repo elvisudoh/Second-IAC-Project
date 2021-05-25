@@ -5,7 +5,7 @@ Description: >
 Parameters:
 
      EnvironmentName:
-         Description: Env Name that will be prefixed in order to access Variables exported in the stack from Lession 21
+         Description: Env Name that will be prefixed in order to access Variables exported in the stack
          Type: String
 
 
@@ -146,8 +146,8 @@ Resources:
           !Sub "${EnvironmentName}-PRIV-NETS" 
       LaunchConfigurationName:
         Ref: WebAppLaunchConfig
-      MinSize: '4'          ## TODO increase this after testing
-      MaxSize: '6'          ## TODO increase this after testing
+      MinSize: '1'          
+      MaxSize: '2'          
       TargetGroupARNs:
         - Ref: WebAppTargetGroup
 
